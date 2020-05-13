@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Camera</title> 
+    <style> 
+    /* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html {
+	height: 100%;
+	background-image: url("../images2/backphoto.jpeg");
+}
+
+body {
+	position: relative;
+	background: rgb(156, 195, 253);
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	font-size: 1.25em; 
+	color: white;
+	text-shadow: 2px 2px 2px #3f3f3f;
+	max-width: 960px;
+	min-height: 100%;
+	margin: 0 auto;
+	box-shadow: -5px -5px 15px 5px darkgray;
+	border-radius: 10px; 
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}  
+body p{
+	text-indent: .75em;
+}
+h1 {
+	margin: .5em .75em;
+	text-align: center;
+}
+
+/* the styles for links */
+a:link, a:visited {
+	text-decoration: none;
+}
+a:focus, a:hover {
+	text-decoration: underline;
+}
+
+
+/* the styles for the header */
+header { 
+	float: none;
+}
+header img {
+	padding: 0 1em 0 0;
+	float: left;
+	max-width: 200px;
+	width: 100%;
+}
+header h2 {
+    padding-top: .75em;
+	font-family: fantasy; 
+	font-size: 50px; 
+	float: left; 
+ text-shadow: 2px 2px 2px #5d5d5d;
+}
+header h3 {
+	padding: .5em 0 .25em 0;
+}
+        /* the styles for the navigation menu */
+#nav_menu {
+	clear: both; 
+	font-family: lucida; 
+	font-size: 1em;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 25%;
+}
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 120%;
+	background-color: rgb(100, 100, 100);
+	color: white;
+	font-weight: bold; 
+	border-top: 3px solid white; 
+	border-bottom: 3px solid white;
+}
+#nav_menu a:hover {
+	background-color: rgb(96, 156, 247);
+	color: white;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li a {
+	text-align: left;
+	padding: .5em;
+
+}
+#nav_menu ul ul li {
+	float: none;
+
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+    </style>
+</head> 
+<header>
+
+    <img class="clearfix" src="images2/camera.png">
+
+    <h2>Betsy Bourgeois Photography</h2>
+
+
+</header>
+
+
+<nav id="mobilemenu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="index.html" class="current">My Camera</a></li> 
+        <li><a href="index.html" class="current">My Photos</a>
+        <ul>
+            <li><a href="nature.html">Animals & Nature</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="action.html">Action</a></li> 
+            <li><a href="people.html">People</a></li>
+        </ul>
+        </li>
+        <li><a href="index.html" class="current">Contact</a></li>
+    </ul>
+</nav>
+<body>
+    
+</body>
+</html>
