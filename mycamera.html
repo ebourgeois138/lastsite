@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Camera</title> 
+    <title>Action Photos</title> 
     <style> 
     /* the styles for the elements */
 * {
@@ -44,6 +44,16 @@ body p{
 h1 {
 	margin: .5em .75em;
 	text-align: center;
+} 
+h2{
+	text-align: center; 
+	font-size: 1.25em; 
+	margin: .5em;
+} 
+h3{
+	text-align: center; 
+	font-size: 1.15em; 
+	margin: .5em;
 }
 
 /* the styles for links */
@@ -131,12 +141,59 @@ header h3 {
 	clear: both;
 	display: block;
 }
+/* styles for the image gallery*/ 
+.row{
+  display: flex; 
+  flex-wrap: wrap; 
+  padding: 0 4px;
+}
 
-    </style>
-</head> 
+/* Create four equal columns that floats next to eachother */
+.column {
+  flex: 25%; 
+  max-width: 25%; 
+  padding: 0 4px
+}  
+img{
+  width: 100%;  
+  padding: 8px;
+  
+}
+.column img{
+  margin-top: 8px; 
+  vertical-align: middle;
+}   
+@media (max-width:800px) {
+  .column {
+    flex: 50%; 
+    max-width: 50%;
+  }
+}
+ @media (max-width: 600px) {
+   .column{
+     flex: 100%; 
+     max-width:100% ;
+   } 
+   
+   
+ }
+footer{
+  font-size: small; 
+  font-style: italic; 
+  color: aliceblue; 
+  text-align: center; 
+  padding: 5px; 
+  border-top: 2px, bold, ghostwhite;
+}  
+
+</style>
+<body>
+                       
+</head>  
+<body>  
 <header>
 
-    <img class="clearfix" src="images2/camera.png">
+    <img class="clearfix" src="../images2/camera.png">
 
     <h2>Betsy Bourgeois Photography</h2>
 
@@ -148,19 +205,34 @@ header h3 {
 <nav id="nav_menu">
     <ul>
         <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="index.html" class="current">My Camera</a></li> 
+        <li><a href="mycamera.html" class="current">My Camera</a></li> 
         <li><a href="index.html" class="current">My Photos</a>
         <ul>
             <li><a href="nature.html">Animals & Nature</a></li>
             <li><a href="people.html">People</a></li>
             <li><a href="action.html">Action</a></li> 
-            <li><a href="people.html">People</a></li>
+            <li><a href="places.html">Places</a></li>
         </ul>
         </li>
-        <li><a href="index.html" class="current">Contact</a></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
     </ul>
-</nav>
-<body>
+</nav> 
+<main>
+	<h1>My Camera</h1> 
+	<h2>Canon 80D</h2>   
+	<h3>It took me a while to find the right camera, but after a few I didn't like, I finally found the one I did. If you have any questions about why I like this camera or what lenses I use, visit my Contact Page! </h3>
+	<img src= "../images/momscamera.webp" style= width:100%;> 
+
+	
+</main>
+ 
+<footer>
+
+	<p>&copy; 2020 Betsy Bourgeois Photography</p>
+
+</footer>
+
+
     
 </body>
 </html>
